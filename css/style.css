@@ -1,0 +1,271 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: gray;
+    
+    
+}
+/* The navigation bar for Laptop and tablet */
+nav
+{
+    font-size: 20px;
+    margin-left: -10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+/*Css for hamburger menu*/
+@media screen and (max-width: 700px)
+{
+    .dropdown
+    {
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    *
+    {
+        width: auto;
+    }
+    a 
+    {
+        visibility: hidden;
+    }
+    .dropdown
+    {
+        position: fixed;
+        display: block;
+        background-color: #000000;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        border: 2px solid #444444;
+    }
+    .hamburger
+    {
+        width: 40px;
+        height: 10px;
+        background-color: rgb(255,255,255);
+        margin: 6px 0;
+    }
+    .hambur 
+    {
+        padding: 10px 20px 12px 25px;
+    }
+    .menubar 
+    {
+        display: none;
+        position: auto;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 2;
+    }
+    .menubar a 
+    {
+        color: black;
+        background: rgb(190,190,190);
+        padding: 12px 0px 12px 20px;
+        text-decoration: none;
+        display: block;
+    }
+    .menubar a:hover 
+    {
+        color: rgb(255,255,255);
+        background-color: #000000;
+    }
+    .dropdown:hover .menubar
+    {
+        display: block;
+    }
+
+}
+p,h3,h4
+{
+    padding: 0 10px 0 10px;
+    font-family: Arial 25pt;
+}
+li
+{
+    float: left;
+}
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover
+{
+    background-color: #111;
+}
+/*The css for header 1 and header 2 in css*/
+h1,h2
+{
+    text-align: center;
+    display: block;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial 35pt;
+}
+/*The css for header 3*/
+h3
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    border-style: solid;
+    background-color: #444444;
+    color: #FFFFFF;
+}
+/*The css for header 4 */
+h4
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: inherit;
+    font-size: 20px;
+    background-color: #707070;
+    color: #FFFFFF;
+}
+table
+{
+    width: 400px;
+}
+th
+{
+    text-align: left;
+}
+table,th,td
+{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 10px;
+}
+/* Grid */
+article , aside
+{
+    display: grid;
+    grid-template-columns: auto;
+    font-family: Arial 15pt;
+}
+.pos1
+{
+    grid-column: 1/3;
+    grid-row: 1;
+}
+.pos2
+{
+    grid-column: 3/5;
+    grid-row: 1;
+}
+img
+{
+    height: 300px;
+}
+.sportcontent
+{
+    background-color: grey;
+}
+/* Contact form */
+input[type=text],select,textarea
+{
+    width:100%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]
+{
+    background-color: #4caf50;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit] :hover
+{
+    background-color: #45a049;
+}
+button[type=submit]
+{
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 4px;
+    margin: 14px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.contactform
+{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+/*The css for the cookie statement*/
+
+input :checked ~ #bannertxt, input:checked
+{
+    display: none;
+    z-index: 2;
+}
+#bannertxt
+{
+    padding: 10px 40px 10px 40px;
+    background-color:#ddd;
+}
+.banner 
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+}
+#cke
+{
+    background-color: #ddd;
+    padding: 10px 10px 10px 10px;
+}
+#video
+{
+    height: 500px;
+    width: 90%;
+    z-index: -90;
+    padding: 12%;
+    margin: 0 auto;
+}
+
+footer
+{
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    clear: both;
+}
+
+
